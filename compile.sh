@@ -4,5 +4,5 @@ JAVAC=${JAVA_HOME}/bin/javac
 JMODS=${JAVA_HOME}/jmods
 
 mkdir -p target/classes
-$JAVAC -d target/classes src/main/java/module-info.java src/main/java/org/apache/j9/Main.java
+$JAVAC --release 9 -d target/classes src/main/java/module-info.java src/main/java/org/apache/j9/Main.java
 
