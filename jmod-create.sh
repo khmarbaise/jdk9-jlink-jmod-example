@@ -4,7 +4,7 @@ JMOD=${JAVA_HOME}/bin/jmod
 JMODS=${JAVA_HOME}/jmods
 
 $JMOD create \
-  --module-path target \
+  --module-path target/classes \
   --os-arch x64 \
   --os-name Mac \
   --os-version 11.4 \
