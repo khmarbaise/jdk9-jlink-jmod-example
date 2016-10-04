@@ -5,7 +5,7 @@ public class Main {
     System.out.println("Main from Java 9");
     if ( args.length > 0 ) {
       for (String arg : args) {
-        System.out.println (" Arg: ' " + arg + "'");
+        System.out.println (" Arg: '" + arg + "'");
       }
     }
   }
