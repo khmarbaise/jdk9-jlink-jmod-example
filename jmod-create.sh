@@ -9,4 +9,5 @@ $JMOD create \
   --os-name Mac \
   --os-version 11.4 \
   --class-path target/classes \
+  --module-version 1.0-SNAPHSHOT \
   target/result.jmod
