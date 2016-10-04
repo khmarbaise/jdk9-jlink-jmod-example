@@ -3,6 +3,6 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.9.0_ea+138.jdk/Contents/
 JLINK=${JAVA_HOME}/bin/jlink
 JMODS=${JAVA_HOME}/jmods
 
-${JLINK} --module-path $JMODS --add-modules java.base -G -c 1 --output jre
+${JLINK} --module-path $JMODS:target/classes -G -c 1 --add-modules org.apache --output jre 
 #${JLINK} -G --output jre --module-path $JMODS --add-modules java.base 
 
