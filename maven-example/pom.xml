@@ -39,6 +39,18 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jlink-plugin</artifactId>
+        <version>3.0.0-SNAPSHOT</version>
+        <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jmod-plugin</artifactId>
+        <version>3.0.0-SNAPSHOT</version>
+        <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <executions>
           <execution>
@@ -71,5 +83,7 @@
   </build>
   <modules>
     <module>mod-1</module>
+    <module>mod-2</module>
+    <module>mod-jlink</module>
   </modules>
 </project>
