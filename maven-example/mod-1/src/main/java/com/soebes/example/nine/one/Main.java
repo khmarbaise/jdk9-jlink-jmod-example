@@ -1,4 +1,4 @@
-package com.soebes.example.nine;
+package com.soebes.example.nine.one;
 
 public class Main {
   public static void main(String[] args) {
