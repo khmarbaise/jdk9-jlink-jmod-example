@@ -14,13 +14,13 @@
   <dependencies>
     <dependency>
       <groupId>com.soebes.examples.jdk9</groupId>
-      <artifactId>mod-1</artifactId>
+      <artifactId>com.soebes.nine.one</artifactId>
       <version>${project.version}</version>
       <type>jmod</type>
     </dependency>
     <dependency>
       <groupId>com.soebes.examples.jdk9</groupId>
-      <artifactId>mod-2</artifactId>
+      <artifactId>com.soebes.nine.two</artifactId>
       <version>${project.version}</version>
       <type>jmod</type>
     </dependency>

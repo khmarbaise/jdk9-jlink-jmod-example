@@ -9,6 +9,6 @@
   </parent>
 
   <packaging>jmod</packaging>
-  <artifactId>mod-2</artifactId>
+  <artifactId>com.soebes.nine.two</artifactId>
 
 </project>
