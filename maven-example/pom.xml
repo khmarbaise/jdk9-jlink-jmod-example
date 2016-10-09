@@ -15,9 +15,9 @@
     <maven.compiler.source>1.9</maven.compiler.source>
   </properties>
   <scm>
-    <developerConnection>scm:git:ssh://git@github.com/khmarbaise/jdk9-example.git</developerConnection>
-    <connection>scm:git:https://github.com/khmarbaise/jdk9-example.git</connection>
-    <url>https://github.com/khmarbaise/jdk9-example</url>
+    <developerConnection>scm:git:ssh://git@github.com/khmarbaise/jdk9-jlink-jmod-example.git</developerConnection>
+    <connection>scm:git:https://github.com/khmarbaise/jdk9-jlink-jmod-example.git</connection>
+    <url>https://github.com/khmarbaise/jdk9-jlink-jmod-example</url>
     <tag>HEAD</tag>
   </scm>
   <distributionManagement>
