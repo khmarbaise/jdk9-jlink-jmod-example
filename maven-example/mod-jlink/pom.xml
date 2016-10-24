@@ -8,7 +8,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <packaging>jlink</packaging>
+  <packaging>jlink-jmod</packaging>
   <artifactId>mod-jlink</artifactId>
 
   <dependencies>
