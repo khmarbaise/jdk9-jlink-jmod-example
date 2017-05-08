@@ -9,8 +9,11 @@ runtime image in the mod-jlink area.
 
 You can start the created image by:
 
-    cd mod-jlink/target/link-result/
+    cd mod-jlink/target/jlink/
     bin/java com.soebes.example.nine.two.Main
+
+    cd mod-jlink/target/jlink/
+    bin/java com.soebes.example.nine.one.Main
 
 Structure:
 
