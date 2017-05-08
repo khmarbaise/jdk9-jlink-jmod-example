@@ -1,11 +1,13 @@
 Maven JDK9 Jigsaw Example
 =========================
 
-This contains a multi module build which contains
-two jmod modules.
+Overview
+--------
 
-Those jmods will be linked together into a single 
-runtime image in the mod-jlink area.
+This contains a multi module build which comprises of two jmod modules.
+
+Those jmods modules will be linked together into a single runtime image in the
+mod-jlink area.
 
 You can start the created image by:
 
@@ -27,3 +29,9 @@ Structure:
 Currently the maven-jmod-plugin and the maven-jlink-plugin
 introduce a new packaging type `jmod` or `jlink`. I'm not sure
 if this is the right path to go.
+
+Status
+------
+
+ * Currently not more than a Proof of Concept 
+ * Everything here is speculative!
