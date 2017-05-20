@@ -30,6 +30,32 @@ Currently the maven-jmod-plugin and the maven-jlink-plugin
 introduce a new packaging type `jmod` or `jlink`. I'm not sure
 if this is the right path to go.
 
+Prerequisites
+-------------
+
+To run this example with Maven you need to have a configured
+`toolchains.xml` correctly configured in your `$HOME/.m2/` location.
+This toolschains.xml looks like this:
+
+``` 
+<toolchains>
+  <toolchain>
+    <type>jdk</type>
+    <provides>
+      <version>1.9</version>
+      <vendor>oracle</vendor>
+    </provides>
+    <configuration>
+      <jdkHome>/Library/Java/JavaVirtualMachines/jdk1.9.0_ea+170.jdk/Contents/Home</jdkHome>
+    </configuration>
+  </toolchain>
+</toolchains>
+```
+
+The given path is related to Mac OS. In cases where you use this on Windows or
+Linux you need to change that accordingly to your installation paths for the 
+JDK 9.
+
 Status
 ------
 
