@@ -1,2 +1,5 @@
 jre
 target
+.settings
+.project
+.classpath
