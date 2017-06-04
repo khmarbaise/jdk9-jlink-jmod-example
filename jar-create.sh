@@ -10,4 +10,4 @@ $JAR \
   --file target/result.jar \
   --module-version 1.0-SNAPHSHOT \
   --module-path $JMODS:target/classes \
-  -C target/classes org 
+  -C target/classes/ .
