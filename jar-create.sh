@@ -7,7 +7,7 @@ mkdir -p target
 $JAR \
   --verbose \
   --create \
-  --file target/result.jar \
+  --file target/result-1.jar \
   --module-version 1.0-SNAPHSHOT \
   --module-path $JMODS:target/classes \
   -C target/classes/ .
