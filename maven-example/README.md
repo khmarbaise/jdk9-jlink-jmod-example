@@ -79,7 +79,9 @@ repository manager.
 
 Status
 ------
-
+ * Currently the maven-jlink-plugin does not create an artifact
+   which can be used during install/deploy phase. Only created
+   in `target` directory.
  * Only working for the given JDK in the toolchains configuration.
  * Currently not more than a Proof of Concept 
  * Everything here is speculative!
