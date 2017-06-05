@@ -4,12 +4,14 @@ Maven JDK9 Jigsaw Example
 Overview
 --------
 
-This contains a multi module build which comprises of two jmod modules.
+This contains a multi module build which comprises of two jmod modules and
+a simple `jar` module.
 
-Those jmods modules will be linked together into a single runtime image in the
+Those modules will be linked together into a single runtime image in the
 mod-jlink area.
 
-You can start the created image by:
+You can start the different test programs from the different 
+modules by using the following calls:
 
     cd mod-jlink/target/jlink/
     bin/java com.soebes.example.nine.two.Main
@@ -17,18 +19,29 @@ You can start the created image by:
     cd mod-jlink/target/jlink/
     bin/java com.soebes.example.nine.one.Main
 
+    cd mod-jlink/target/jlink/
+    bin/java com.soebes.example.nine.jar.Main
+
+
 Structure:
 
     + pom.xml
     !
     +-- mod-1
     +-- mod-2
+    +-- mod-jar
     +-- mod-jlink
 
 
-Currently the maven-jmod-plugin and the maven-jlink-plugin
-introduce a new packaging type `jmod` or `jlink`. I'm not sure
-if this is the right path to go.
+Currently the maven-jmod-plugin and the maven-jlink-plugin introduce a new
+packaging type `jmod` or `jlink`. The `mod-1` and `mod-2` are using a new
+packaging type `jmod` whereas `mod-jar` is a usual `jar` packaging.
+
+The modules which will be linked into the final image is decided by the given
+dependencies in the `mod-jlink` module.
+
+I'm not sure if this is the right path to go.
+
 
 Prerequisites
 -------------
@@ -46,7 +59,7 @@ This toolschains.xml looks like this:
       <vendor>oracle</vendor>
     </provides>
     <configuration>
-      <jdkHome>/Library/Java/JavaVirtualMachines/jdk1.9.0_ea+170.jdk/Contents/Home</jdkHome>
+      <jdkHome>/Library/Java/JavaVirtualMachines/jdk1.9.0_ea+172.jdk/Contents/Home</jdkHome>
     </configuration>
   </toolchain>
 </toolchains>
@@ -67,5 +80,6 @@ repository manager.
 Status
 ------
 
+ * Only working for the given JDK in the toolchains configuration.
  * Currently not more than a Proof of Concept 
  * Everything here is speculative!

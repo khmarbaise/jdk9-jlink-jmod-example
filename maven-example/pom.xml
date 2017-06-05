@@ -96,6 +96,7 @@
   <modules>
     <module>mod-1</module>
     <module>mod-2</module>
+    <module>mod-jar</module>
     <module>mod-jlink</module>
   </modules>
 </project>

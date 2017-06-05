@@ -24,5 +24,10 @@
       <version>${project.version}</version>
       <type>jmod</type>
     </dependency>
+    <dependency>
+      <groupId>com.soebes.examples.jdk9</groupId>
+      <artifactId>com.soebes.nine.jar</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
 </project>
