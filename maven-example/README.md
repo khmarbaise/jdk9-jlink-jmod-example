@@ -56,6 +56,14 @@ The given path is related to Mac OS. In cases where you use this on Windows or
 Linux you need to change that accordingly to your installation paths for the 
 JDK 9.
 
+You have to configure to use the [SNAPSHOT repositories of the Apache Software
+Foundation](https://repository.apache.org/content/repositories/snapshots/) to
+get the maven-jlink-plugin and the maven-jmod-plugin in their appropriate
+version, cause at the moment not more than SNAPSHOT's exists. This should
+be done either in your user `settings.xml` or in the configuration of your 
+repository manager.
+
+
 Status
 ------
 
