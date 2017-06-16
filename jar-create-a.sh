@@ -1,5 +1,5 @@
 #!/bin/bash
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.9.0_ea+173.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.9.0_ea+174.jdk/Contents/Home
 JAR=${JAVA_HOME}/bin/jar
 JMODS=${JAVA_HOME}/jmods
 
