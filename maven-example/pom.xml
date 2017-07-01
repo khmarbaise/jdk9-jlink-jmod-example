@@ -39,14 +39,6 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-install-plugin</artifactId>
-        <version>3.0.0-SNAPSHOT</version>
-        <configuration>
-          <installAtEnd>false</installAtEnd>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jlink-plugin</artifactId>
         <version>3.0.0-SNAPSHOT</version>
         <extensions>true</extensions>
