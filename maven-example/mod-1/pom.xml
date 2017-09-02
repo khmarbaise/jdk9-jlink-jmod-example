@@ -11,4 +11,28 @@
   <packaging>jmod</packaging>
   <artifactId>com.soebes.nine.one</artifactId>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jmod-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>list</id>
+            <goals>
+              <goal>list</goal>
+            </goals>
+            <phase>verify</phase>
+          </execution>
+          <execution>
+            <id>describe</id>
+            <goals>
+              <goal>describe</goal>
+            </goals>
+            <phase>verify</phase>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
