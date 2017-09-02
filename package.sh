@@ -5,7 +5,7 @@ JMODS=${JAVA_HOME}/jmods
 
 #$JAVAPACKAGER -deploy -native image 
 #$JAVAPACKAGER -deploy -native installer 
-$JAVAPACKAGER -deploy -native msi 
+#$JAVAPACKAGER -deploy -native msi 
 $JAVAPACKAGER -deploy -native dmg \
   -name FirstApplication \
   -outdir result-folder \
