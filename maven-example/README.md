@@ -4,7 +4,7 @@ Maven JDK9 Jigsaw Example
 Overview
 --------
 
-This contains a multi module build which comprises of two jmod modules and
+This contains a multi module build which comprises of two `jmod` modules and
 a simple `jar` module.
 
 Those modules will be linked together into a single runtime image in the
@@ -13,13 +13,13 @@ mod-jlink area.
 You can start the different test programs from the different 
 modules by using the following calls:
 
-    cd mod-jlink/target/jlink/
+    cd mod-jlink/target/maven-jlink/
     bin/java com.soebes.example.nine.two.Main
 
-    cd mod-jlink/target/jlink/
+    cd mod-jlink/target/maven-jlink/
     bin/java com.soebes.example.nine.one.Main
 
-    cd mod-jlink/target/jlink/
+    cd mod-jlink/target/maven-jlink/
     bin/java com.soebes.example.nine.jar.Main
 
 
@@ -79,9 +79,5 @@ repository manager.
 
 Status
 ------
- * Currently the maven-jlink-plugin does not create an artifact
-   which can be used during install/deploy phase. Only created
-   in `target` directory.
  * Only working for the given JDK in the toolchains configuration.
- * Currently not more than a Proof of Concept 
  * Everything here is speculative!
