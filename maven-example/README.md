@@ -33,9 +33,10 @@ Structure:
     +-- mod-jlink
 
 
-Currently the maven-jmod-plugin and the maven-jlink-plugin introduce a new
-packaging type `jmod` or `jlink`. The `mod-1` and `mod-2` are using a new
-packaging type `jmod` whereas `mod-jar` is a usual `jar` packaging.
+Currently the [maven-jmod-plugin][jmod-plugin] and the
+[maven-jlink-plugin][jlink-plugin] introduce a new packaging type `jmod` or
+`jlink`. The `mod-1` and `mod-2` are using a new packaging type `jmod` whereas
+`mod-jar` is a usual `jar` packaging.
 
 The modules which will be linked into the final image is decided by the given
 dependencies in the `mod-jlink` module.
@@ -71,13 +72,16 @@ JDK 9.
 
 You have to configure to use the [SNAPSHOT repositories of the Apache Software
 Foundation](https://repository.apache.org/content/repositories/snapshots/) to
-get the maven-jlink-plugin and the maven-jmod-plugin in their appropriate
-version, cause at the moment not more than SNAPSHOT's exists. This should
-be done either in your user `settings.xml` or in the configuration of your 
-repository manager.
+get the [maven-jlink-plugin][jlink-plugin] and the
+[maven-jmod-plugin][jmod-plugin] in their appropriate version, cause at the
+moment not more than SNAPSHOT's exists. This should be done either in your user
+`settings.xml` or in the configuration of your repository manager.
 
 
 Status
 ------
  * Only working for the given JDK in the toolchains configuration.
  * Everything here is speculative!
+
+[jlink-plugin]: https://maven.apache.org/plugins-archives/maven-jlink-plugin-LATEST/
+[jmod-plugin]: https://maven.apache.org/plugins-archives/maven-jmod-plugin-LATEST/
