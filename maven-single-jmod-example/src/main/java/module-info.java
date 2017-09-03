@@ -1,4 +1,4 @@
-module com.soebes.nine.one {
+module com.corporate.project {
   requires java.base;
-  exports com.soebes.example.nine.one;
+  exports com.corporate.project;
 }

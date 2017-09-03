@@ -1,4 +1,4 @@
-package com.soebes.example.nine.one;
+package com.corporate.project;
 
 public class Main
 {
