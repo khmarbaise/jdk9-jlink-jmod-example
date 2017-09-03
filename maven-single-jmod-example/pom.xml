@@ -45,6 +45,22 @@
         <configuration>
           <mainClass>com.corporate.project.Main</mainClass>
         </configuration>
+        <executions>
+          <execution>
+            <id>list</id>
+            <goals>
+              <goal>list</goal>
+            </goals>
+            <phase>verify</phase>
+          </execution>
+          <execution>
+            <id>describe</id>
+            <goals>
+              <goal>describe</goal>
+            </goals>
+            <phase>verify</phase>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
