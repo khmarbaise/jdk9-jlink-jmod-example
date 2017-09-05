@@ -39,6 +39,11 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jlink-plugin</artifactId>
         <version>3.0.0-SNAPSHOT</version>
         <extensions>true</extensions>
@@ -101,7 +106,9 @@
     <module>mod-1</module>
     <module>mod-2</module>
     <module>mod-jar</module>
+    <!--
     <module>mod-jar-jmod</module>
+    -->
     <module>mod-jlink</module>
   </modules>
 </project>

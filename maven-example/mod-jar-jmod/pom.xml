@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.soebes.examples.jdk9</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <packaging>jmod</packaging>
+  <artifactId>com.soebes.nine.three</artifactId>
+  <description>Make a jmod file from a jar file.</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.soebes.examples.jdk9</groupId>
+      <artifactId>com.soebes.nine.jar</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jmod-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>list</id>
+            <goals>
+              <goal>list</goal>
+            </goals>
+            <phase>verify</phase>
+          </execution>
+          <execution>
+            <id>describe</id>
+            <goals>
+              <goal>describe</goal>
+            </goals>
+            <phase>verify</phase>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

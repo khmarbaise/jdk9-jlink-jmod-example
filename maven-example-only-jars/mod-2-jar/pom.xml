@@ -8,6 +8,6 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.soebes.nine.two.jar</artifactId>
+  <artifactId>mod-2-jar</artifactId>
 
 </project>

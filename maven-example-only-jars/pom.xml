@@ -42,10 +42,12 @@
         <artifactId>maven-jlink-plugin</artifactId>
         <version>3.0.0-SNAPSHOT</version>
         <extensions>true</extensions>
+        <!--
         <configuration>
           <noHeaderFiles>true</noHeaderFiles>
           <noManPages>true</noManPages>
         </configuration>
+        -->
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
