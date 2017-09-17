@@ -81,7 +81,11 @@ moment not more than SNAPSHOT's exists. This should be done either in your user
 Status
 ------
  * Only working for the given JDK in the toolchains configuration.
- * Everything here is speculative!
+
+ * The maven-jlink-plugin has been officially released in a 3.0.0-alpha-1 
+   release. So it's available from Maven Central.
+ * The maven-jmod-plugin is currently under VOTE for first public release.
+   Should take only a few days.
 
 [jlink-plugin]: https://maven.apache.org/plugins-archives/maven-jlink-plugin-LATEST/
 [jmod-plugin]: https://maven.apache.org/plugins-archives/maven-jmod-plugin-LATEST/
