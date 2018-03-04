@@ -45,7 +45,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jlink-plugin</artifactId>
-        <version>3.0.0-alpha-1</version>
+        <version>3.0.0-alpha-2-SNAPSHOT</version>
         <extensions>true</extensions>
         <configuration>
           <noHeaderFiles>true</noHeaderFiles>
@@ -58,24 +58,22 @@
         <version>3.0.0-alpha-1</version>
         <extensions>true</extensions>
       </plugin>
-      <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <executions>
-
+          <!--
             ! Currently turned off enforcer cause
             ! we are using SNAPSHOT versions of plugins
             ! which are by default forbidden by
             ! the inherited enforcer rules.
-
+          -->
           <execution>
             <id>enforce-maven</id>
             <phase>UNKNOWN</phase>
           </execution>
         </executions>
       </plugin>
-      -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-toolchains-plugin</artifactId>

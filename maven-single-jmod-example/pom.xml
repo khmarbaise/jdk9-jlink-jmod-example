@@ -44,6 +44,7 @@
         <extensions>true</extensions>
         <configuration>
           <mainClass>com.corporate.project.Main</mainClass>
+          <targetPlatform>t</targetPlatform>
         </configuration>
         <executions>
           <execution>
@@ -62,24 +63,22 @@
           </execution>
         </executions>
       </plugin>
-      <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <executions>
-         
+          <!-- 
             ! Currently turned off enforcer cause
             ! we are using SNAPSHOT versions of plugins
             ! which are by default forbidden by
             ! the inherited enforcer rules.
-        
+          -->        
           <execution>
             <id>enforce-maven</id>
             <phase>UNKNOWN</phase>
           </execution>
         </executions>
       </plugin>
-      -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-toolchains-plugin</artifactId>

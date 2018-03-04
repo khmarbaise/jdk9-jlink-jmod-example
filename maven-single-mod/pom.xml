@@ -9,6 +9,7 @@
   <groupId>com.corporate.project</groupId>
   <artifactId>single-mod</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jmod</packaging>
   <properties>
     <maven.compiler.target>1.9</maven.compiler.target>
     <maven.compiler.source>1.9</maven.compiler.source>
@@ -36,6 +37,12 @@
   </distributionManagement>
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jmod-plugin</artifactId>
+        <version>3.0.0-alpha-1</version>
+        <extensions>true</extensions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jlink-plugin</artifactId>

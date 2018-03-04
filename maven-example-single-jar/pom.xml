@@ -39,11 +39,17 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jlink-plugin</artifactId>
         <version>3.0.0-alpha-2-SNAPSHOT</version>
         <extensions>true</extensions>
         <configuration>
-          <verbose>true</verbose>
+          <noHeaderFiles>true</noHeaderFiles>
+          <noManPages>true</noManPages>
         </configuration>
       </plugin>
       <plugin>
@@ -56,18 +62,19 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <executions>
-          <!-- 
+          <!--
             ! Currently turned off enforcer cause
             ! we are using SNAPSHOT versions of plugins
             ! which are by default forbidden by
             ! the inherited enforcer rules.
-          -->       
+          -->
           <execution>
             <id>enforce-maven</id>
             <phase>UNKNOWN</phase>
           </execution>
         </executions>
       </plugin>
+      <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-toolchains-plugin</artifactId>
@@ -88,11 +95,11 @@
           </toolchains>
         </configuration>
       </plugin>
+      -->
     </plugins>
   </build>
   <modules>
-    <module>mod-1-jar</module>
-    <module>mod-2-jar</module>
+    <module>mod-jar</module>
     <module>mod-jlink</module>
   </modules>
 </project>
